@@ -1,0 +1,85 @@
+{
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+    color: rgb(86, 123, 153)
+}
+
+
+/* HEADER STYLES */
+
+header {
+    padding: 25px 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a,
+nav button {
+    color: rgb(131, 38, 38);
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+
+nav a:hover,
+nav button:hover {
+    opacity: 0.5;
+}
+
+/* OBRAS STYLES */
+.obra{
+    background-color: azure;
+    padding: 2%;
+}
+
+.obra img {
+    width: 40%;
+    margin: 0 2%;
+
+}
+
+.obra-conetnido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.obra-contenido p{
+    font-size: 120%;
+    text-align: justify;
+    padding: 10%;
+}
+
+.numero-obra{
+    font: size 50px;
+    font-weight: bold;
+    margin: 5% 2%;
+}
+
+.encabezado-obra{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.emcabezado-obra h2{
+    font-size: 35px;
+    letter-spacing: 10px;
+
+}

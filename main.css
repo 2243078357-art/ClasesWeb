@@ -9,8 +9,8 @@ html {
 body {
     margin: 0 10%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #111;
-    color: rgb(86, 123, 153)
+    background-color: #ffffff;
+    color: rgb(255, 253, 154)
 }
 
 
@@ -28,9 +28,9 @@ nav {
 
 nav a,
 nav button {
-    color: rgb(131, 38, 38);
+    color: rgb(0, 0, 0);
     font-family: inherit;
-    font-size: 14px;
+    font-size: 20px;
     cursor: pointer;
     text-decoration: none;
     background: none;
@@ -44,42 +44,67 @@ nav button:hover {
 
 /* OBRAS STYLES */
 .obra{
-    background-color: azure;
-    padding: 2%;
+    background-color: #202222;
+    color: #fffde0;
+    padding: 4%;
+    margin-bottom: 40px;
+    border-radius: 3px
 }
 
-.obra img {
-    width: 40%;
-    margin: 0 2%;
+.obra-contenido img {
+    width: 46%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    transition: transform 0.4s ease;
+
+}
+.obra-contenido  img:hover{
+    transform: scale(1.02);
 
 }
 
-.obra-conetnido{
+
+.obra-contenido{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 6%;
 
 }
 .obra-contenido p{
-    font-size: 120%;
-    text-align: justify;
-    padding: 10%;
+    width: 48%;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    color: #f1f0e5;
 }
 
 .numero-obra{
-    font: size 50px;
+    font-size: 18px;
     font-weight: bold;
-    margin: 5% 2%;
+    color: #fff35c;
+    margin: 0;
 }
 
 .encabezado-obra{
     display: flex;
-    justify-content: flex-start;
     align-items: baseline;
+    gap: 18 px;
+    margin-bottom: 30px;
 }
 
-.emcabezado-obra h2{
-    font-size: 35px;
-    letter-spacing: 10px;
+.encabezado-obra h2{
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 0;
+    color :#fff35c;
 
+}
+
+.obra-invertida .obra-contenido{
+    flex-direction: row-reverse;
 }
